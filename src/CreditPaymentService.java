@@ -4,6 +4,5 @@ public class CreditPaymentService {
         double x = Math.pow((1 + ratePerMonth), (creditPeriod * 12));
         double annIndex = (ratePerMonth * x / (x - 1));
         return annIndex * creditSum;
-
     }
 }
